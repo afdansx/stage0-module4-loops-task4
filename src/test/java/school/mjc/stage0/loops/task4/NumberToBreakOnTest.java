@@ -38,7 +38,7 @@ class NumberToBreakOnTest extends BaseIOTest {
         List<String> strings = Files.readAllLines(path);
 
         List<String> result = strings.stream()
-                .filter(line -> line.contains("break") || line.contains("int i = 0; i < numberToGoUntil; i++")
+                .filter(line -> line.contains("break") || line.contains("int i = 1; i <= toBreakWith; i++")
                     || line.contains("int i = 1; i <= numberToGoUntil; i++"))
                 .collect(Collectors.toList());
 

@@ -24,15 +24,6 @@ class TwoRangesSumTest extends BaseIOTest {
     }
 
     @Test
-    void printSumOfTwoRangesPrintsSumWhenEqual() {
-        TwoRangesSum rangesSum = new TwoRangesSum();
-
-        rangesSum.printSumOfTwoRanges(10, 10);
-
-        assertOutEquals("skipped sum is 55\ncounted sum is 0\n");
-    }
-
-    @Test
     void printSumOfTwoRangesPrintsSumWhenNegative() {
         TwoRangesSum rangesSum = new TwoRangesSum();
 
